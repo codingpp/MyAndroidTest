@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.codingpp.myandroid.cleancache.CleanActivity
 import com.codingpp.myandroid.databinding.ActivityMainBinding
+import com.codingpp.myandroid.handler.HandlerActivity
 import com.codingpp.myandroid.observerdemo.ObserveActivity
 import com.codingpp.myandroid.socket.SocketActivity
 
@@ -35,6 +36,9 @@ class MainActivity : AppCompatActivity() {
         }
         binding.btnClean.setOnClickListener {
             CleanActivity.jump(this)
+        }
+        binding.btnHandler.setOnClickListener {
+            HandlerActivity.jump(this)
         }
     }
 }

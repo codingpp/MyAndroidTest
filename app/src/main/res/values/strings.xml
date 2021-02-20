@@ -13,4 +13,5 @@
 
     <string name="create_cache">生成缓存</string>
     <string name="clean_cache">清理缓存</string>
+    <string name="handler">Handler</string>
 </resources>
