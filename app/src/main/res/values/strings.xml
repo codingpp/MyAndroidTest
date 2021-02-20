@@ -8,10 +8,22 @@
     <string name="socket">Socket通信</string>
     <string name="action_settings">Settings</string>
 
+    <!--    缓存-->
     <string name="cache">缓存: </string>
     <string name="default_size">0MB</string>
-
     <string name="create_cache">生成缓存</string>
     <string name="clean_cache">清理缓存</string>
     <string name="handler">Handler</string>
+
+    <!--线程-->
+    <string name="button_execute">执行</string>
+    <string name="button_execute2">执行2</string>
+    <string name="ThreadPoolExecutor">ThreadPoolExecutor</string>
+    <string name="ScheduledThreadPool">ScheduledThreadPool</string>
+    <string name="FixedThreadPool">FixedThreadPool</string>
+    <string name="SingleThreadExecutor">SingleThreadExecutor</string>
+    <string name="CachedThreadPool">CachedThreadPool</string>
+    <string name="MyThreadPool">MyThreadPool</string>
+    <string name="MyAsyncTask">MyAsyncTask</string>
+    <string name="thread">多线程、线程池</string>
 </resources>

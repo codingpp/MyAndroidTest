@@ -7,6 +7,7 @@ import com.codingpp.myandroid.databinding.ActivityMainBinding
 import com.codingpp.myandroid.handler.HandlerActivity
 import com.codingpp.myandroid.observerdemo.ObserveActivity
 import com.codingpp.myandroid.socket.SocketActivity
+import com.codingpp.myandroid.thread.ThreadActivity
 
 /**
  * 主页
@@ -39,6 +40,9 @@ class MainActivity : AppCompatActivity() {
         }
         binding.btnHandler.setOnClickListener {
             HandlerActivity.jump(this)
+        }
+        binding.btnThread.setOnClickListener {
+            ThreadActivity.jump(this)
         }
     }
 }

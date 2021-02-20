@@ -21,6 +21,14 @@
         <activity android:name=".socket.SocketActivity" />
         <activity android:name=".cleancache.CleanActivity" />
         <activity android:name=".handler.HandlerActivity" />
+        <activity android:name=".thread.ThreadActivity" />
+        <activity android:name=".thread.ui.AsyncTaskActivity" />
+        <activity android:name=".thread.ui.CachedThreadPoolActivity" />
+        <activity android:name=".thread.ui.DefaultThreadPoolActivity" />
+        <activity android:name=".thread.ui.FixedThreadPoolActivity" />
+        <activity android:name=".thread.ui.MyThreadPoolActivity" />
+        <activity android:name=".thread.ui.ScheduledThreadPoolActivity" />
+        <activity android:name=".thread.ui.SingleThreadExecutorActivity" />
     </application>
 
 </manifest>
