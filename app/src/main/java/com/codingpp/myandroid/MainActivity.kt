@@ -5,6 +5,7 @@ import android.os.Bundle
 import com.codingpp.myandroid.cleancache.CleanActivity
 import com.codingpp.myandroid.databinding.ActivityMainBinding
 import com.codingpp.myandroid.handler.HandlerActivity
+import com.codingpp.myandroid.lifecycle.logsample.ScrollingActivity
 import com.codingpp.myandroid.myviews.MyViewsActivity
 import com.codingpp.myandroid.observerdemo.ObserveActivity
 import com.codingpp.myandroid.socket.SocketActivity
@@ -47,6 +48,9 @@ class MainActivity : AppCompatActivity() {
         }
         binding.btnViews.setOnClickListener {
             MyViewsActivity.jump(this)
+        }
+        binding.btnLifecycle.setOnClickListener {
+            ScrollingActivity.jump(this)
         }
     }
 }

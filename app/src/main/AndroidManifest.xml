@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.codingpp.myandroid">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -30,6 +33,8 @@
         <activity android:name=".thread.ui.ScheduledThreadPoolActivity" />
         <activity android:name=".thread.ui.SingleThreadExecutorActivity" />
         <activity android:name=".myviews.MyViewsActivity" />
+        <activity android:name=".lifecycle.logsample.ScrollingActivity" />
+        <activity android:name=".lifecycle.networksample.SampleActivity" />
     </application>
 
 </manifest>
