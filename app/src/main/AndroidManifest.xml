@@ -19,6 +19,7 @@
 
         <activity android:name=".observerdemo.ObserveActivity" />
         <activity android:name=".socket.SocketActivity" />
+        <activity android:name=".cleancache.CleanActivity" />
     </application>
 
 </manifest>

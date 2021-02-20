@@ -1,9 +1,16 @@
 <resources>
     <string name="app_name">MyAndroidTest</string>
-    <string name="observe">Observe</string>
+    <string name="observe">观察者模式</string>
     <string name="receipt">通知收快递</string>
     <string name="signed">通知快递已签收</string>
     <string name="text_send">发送</string>
     <string name="input_ip">请输入IP地址</string>
-    <string name="socket">Socket</string>
+    <string name="socket">Socket通信</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="cache">缓存: </string>
+    <string name="default_size">0MB</string>
+
+    <string name="create_cache">生成缓存</string>
+    <string name="clean_cache">清理缓存</string>
 </resources>
