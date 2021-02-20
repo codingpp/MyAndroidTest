@@ -133,4 +133,6 @@
     </string>
     <string name="lifecycle">Lifecycle</string>
 
+    <string name="hint">查看Logcat</string>
+    <string name="dispatch_event">事件分发</string>
 </resources>

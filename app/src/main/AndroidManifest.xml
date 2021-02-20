@@ -35,6 +35,7 @@
         <activity android:name=".myviews.MyViewsActivity" />
         <activity android:name=".lifecycle.logsample.ScrollingActivity" />
         <activity android:name=".lifecycle.networksample.SampleActivity" />
+        <activity android:name=".dispatchevent.DispatchActivity"/>
     </application>
 
 </manifest>
