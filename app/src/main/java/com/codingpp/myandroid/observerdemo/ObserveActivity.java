@@ -3,13 +3,10 @@ package com.codingpp.myandroid.observerdemo;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.codingpp.myandroid.R;
 import com.codingpp.myandroid.databinding.ActivityObserveBinding;
-import com.google.android.material.button.MaterialButton;
 
 /**
  * 测试Observe
@@ -18,7 +15,6 @@ import com.google.android.material.button.MaterialButton;
  */
 public class ObserveActivity extends AppCompatActivity implements Callback {
 
-    private TextView tvObserver;
 
     private Courier courier;
 
@@ -48,16 +44,14 @@ public class ObserveActivity extends AppCompatActivity implements Callback {
      */
     private void initView() {
         binding.btnObservable.setOnClickListener(v -> {
-            tvObserver.setText("");
+            binding.tvObserver.setText("");
             //快递到了
             courier.postNewExpress("您的快递到啦！");
         });
-        MaterialButton btn2 = findViewById(R.id.btn2);
-        btn2.setOnClickListener(v -> {
-            tvObserver.setText("");
+        binding.btn2.setOnClickListener(v -> {
+            binding.tvObserver.setText("");
             courier.postNewExpress("您发出的快递已被签收！");
         });
-        tvObserver = findViewById(R.id.tvObserver);
     }
 
     /**
@@ -79,7 +73,7 @@ public class ObserveActivity extends AppCompatActivity implements Callback {
 
     @Override
     public void postInfo(String result) {
-        String text = tvObserver.getText().toString().concat("\n");
-        tvObserver.setText(text.concat(result));
+        String text = binding.tvObserver.getText().toString().concat("\n");
+        binding.tvObserver.setText(text.concat(result));
     }
 }

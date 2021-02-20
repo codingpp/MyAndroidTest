@@ -4,14 +4,13 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.ViewStub;
 
 import androidx.annotation.LayoutRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.codingpp.myandroid.R;
+import com.codingpp.myandroid.databinding.FragmentPageBinding;
 import com.codingpp.myandroid.myviews.constant.Constants;
 
 
@@ -28,6 +27,8 @@ public class PageFragment extends Fragment {
     @LayoutRes
     int practiceLayoutRes;
 
+    private FragmentPageBinding binding;
+
     public static PageFragment newInstance(@LayoutRes int sampleLayoutRes, @LayoutRes int practiceLayoutRes) {
         PageFragment pageFragment = new PageFragment();
         Bundle args = new Bundle();
@@ -41,18 +42,15 @@ public class PageFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_page, container, false);
-
+        binding = FragmentPageBinding.inflate(inflater, container, false);
         //ViewStub，是一个大小为0,默认不可见的控件,设置成View.Visible或调用了它的inflate()之后才会填充布局资源，占用资源少
-        ViewStub sampleStub = view.findViewById(R.id.sampleStub);
-        sampleStub.setLayoutResource(sampleLayoutRes);
-        sampleStub.inflate();
+        binding.sampleStub.setLayoutResource(sampleLayoutRes);
+        binding.sampleStub.inflate();
 
-        ViewStub practiceStub = view.findViewById(R.id.practiceStub);
-        practiceStub.setLayoutResource(practiceLayoutRes);
-        practiceStub.inflate();
+        binding.practiceStub.setLayoutResource(practiceLayoutRes);
+        binding.practiceStub.inflate();
 
-        return view;
+        return binding.getRoot();
     }
 
     @Override

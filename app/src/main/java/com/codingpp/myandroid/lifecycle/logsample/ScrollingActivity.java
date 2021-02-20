@@ -6,10 +6,8 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.codingpp.myandroid.R;
 import com.codingpp.myandroid.databinding.ActivityScrollingBinding;
 import com.codingpp.myandroid.lifecycle.networksample.SampleActivity;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 /**
  * Lifecycle测试页面
@@ -32,8 +30,7 @@ public class ScrollingActivity extends AppCompatActivity {
         binding = ActivityScrollingBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(view -> startActivity(new Intent(ScrollingActivity.this, SampleActivity.class)));
+        binding.fab.setOnClickListener(view -> startActivity(new Intent(ScrollingActivity.this, SampleActivity.class)));
 
         //注册观察者
         getLifecycle().addObserver(new MyObserver());
