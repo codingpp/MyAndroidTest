@@ -2,6 +2,7 @@ package com.codingpp.myandroid
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.codingpp.myandroid.camera.takephoto.TakePhotoActivity
 import com.codingpp.myandroid.cleancache.CleanActivity
 import com.codingpp.myandroid.databinding.ActivityMainBinding
 import com.codingpp.myandroid.dispatchevent.DispatchActivity
@@ -55,6 +56,9 @@ class MainActivity : AppCompatActivity() {
         }
         binding.btnDispatch.setOnClickListener {
             DispatchActivity.jump(this)
+        }
+        binding.btnCamera.setOnClickListener {
+            TakePhotoActivity.jump(this)
         }
     }
 }

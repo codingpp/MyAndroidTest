@@ -35,7 +35,9 @@
         <activity android:name=".myviews.MyViewsActivity" />
         <activity android:name=".lifecycle.logsample.ScrollingActivity" />
         <activity android:name=".lifecycle.networksample.SampleActivity" />
-        <activity android:name=".dispatchevent.DispatchActivity"/>
+        <activity android:name=".dispatchevent.DispatchActivity" />
+        <activity android:name=".camera.CameraActivity" />
+        <activity android:name=".camera.takephoto.TakePhotoActivity" />
     </application>
 
 </manifest>
