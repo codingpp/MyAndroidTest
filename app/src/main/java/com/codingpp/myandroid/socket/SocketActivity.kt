@@ -41,7 +41,7 @@ class SocketActivity : AppCompatActivity(), Runnable {
     private lateinit var socket: Socket
     private lateinit var buffer: BufferedReader
     private lateinit var out: PrintWriter
-    private var myHandler: MyHandler = MyHandler(this)
+    private var myHandler: MyHandler = MyHandler(Looper.getMainLooper(), this)
 
     private var threadPool =
         ThreadPoolExecutor(1, 1, 1, TimeUnit.SECONDS, LinkedBlockingDeque<Runnable>())
@@ -134,7 +134,7 @@ class SocketActivity : AppCompatActivity(), Runnable {
         }
     }
 
-    class MyHandler(activity: SocketActivity) : Handler() {
+    class MyHandler(looper: Looper, activity: SocketActivity) : Handler(looper) {
 
         private var mReference: WeakReference<SocketActivity> = WeakReference(activity)
 
@@ -142,7 +142,7 @@ class SocketActivity : AppCompatActivity(), Runnable {
             super.handleMessage(msg)
             val activity: SocketActivity? = mReference.get()
             msg.let {
-                if (msg!!.what == 1) {
+                if (msg.what == 1) {
                     activity?.binding?.tvMsg?.append(msg.obj as CharSequence?)
                 }
             }
