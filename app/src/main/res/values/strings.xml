@@ -26,4 +26,19 @@
     <string name="MyThreadPool">MyThreadPool</string>
     <string name="MyAsyncTask">MyAsyncTask</string>
     <string name="thread">多线程、线程池</string>
+
+    <!--    自定义view-->
+    <string name="title_draw_color">drawColor()</string>
+    <string name="title_draw_circle">drawCircle()</string>
+    <string name="title_draw_rect">drawRect()</string>
+    <string name="title_draw_point">drawPoint()</string>
+    <string name="title_draw_oval">drawOval()</string>
+    <string name="title_draw_line">drawLine()</string>
+    <string name="title_draw_round_rect">drawRoundRect()</string>
+    <string name="title_draw_arc">drawArc()</string>
+    <string name="title_draw_path">drawPath()</string>
+    <string name="title_draw_histogram">直方图</string>
+    <string name="title_draw_pie_chart">饼图</string>
+    <string name="title_draw_circular_diagram">环形图</string>
+    <string name="my_views">自定义view</string>
 </resources>

@@ -29,6 +29,7 @@
         <activity android:name=".thread.ui.MyThreadPoolActivity" />
         <activity android:name=".thread.ui.ScheduledThreadPoolActivity" />
         <activity android:name=".thread.ui.SingleThreadExecutorActivity" />
+        <activity android:name=".myviews.MyViewsActivity" />
     </application>
 
 </manifest>

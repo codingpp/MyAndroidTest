@@ -5,6 +5,7 @@ import android.os.Bundle
 import com.codingpp.myandroid.cleancache.CleanActivity
 import com.codingpp.myandroid.databinding.ActivityMainBinding
 import com.codingpp.myandroid.handler.HandlerActivity
+import com.codingpp.myandroid.myviews.MyViewsActivity
 import com.codingpp.myandroid.observerdemo.ObserveActivity
 import com.codingpp.myandroid.socket.SocketActivity
 import com.codingpp.myandroid.thread.ThreadActivity
@@ -43,6 +44,9 @@ class MainActivity : AppCompatActivity() {
         }
         binding.btnThread.setOnClickListener {
             ThreadActivity.jump(this)
+        }
+        binding.btnViews.setOnClickListener {
+            MyViewsActivity.jump(this)
         }
     }
 }
