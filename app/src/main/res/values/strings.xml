@@ -3,4 +3,6 @@
     <string name="observe">Observe</string>
     <string name="receipt">通知收快递</string>
     <string name="signed">通知快递已签收</string>
+    <string name="text_send">发送</string>
+    <string name="input_ip">请输入IP地址</string>
 </resources>

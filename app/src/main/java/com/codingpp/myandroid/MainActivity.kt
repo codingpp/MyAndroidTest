@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.codingpp.myandroid.databinding.ActivityMainBinding
 import com.codingpp.myandroid.observerdemo.ObserveActivity
+import com.codingpp.myandroid.socket.SocketActivity
 
 /**
  * 主页
@@ -27,6 +28,9 @@ class MainActivity : AppCompatActivity() {
     private fun initView() {
         binding.btnObserver.setOnClickListener {
             ObserveActivity.jump(this)
+        }
+        binding.btnSocket.setOnClickListener {
+            SocketActivity.jump(this)
         }
     }
 }
