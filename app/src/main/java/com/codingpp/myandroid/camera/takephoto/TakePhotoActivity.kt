@@ -168,8 +168,6 @@ class TakePhotoActivity : AppCompatActivity() {
 
                 }
             }
-        } else {
-            //do nothing
         }
     }
 
