@@ -3,7 +3,6 @@ package com.codingpp.myandroid.dispatchevent;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -26,11 +25,8 @@ public class DispatchActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dispatch);
-        findViewById(R.id.view).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //do nothing
-            }
+        findViewById(R.id.view).setOnClickListener(v -> {
+            //do nothing
         });
     }
 }
