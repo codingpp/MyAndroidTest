@@ -34,7 +34,7 @@ public class CachedThreadPoolActivity extends AppCompatActivity {
 
     private static final int HANDLER_SET_CONTENT = 0x001;
 
-    private MyHandler myHandler = new MyHandler(this);
+    private final MyHandler myHandler = new MyHandler(this);
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
